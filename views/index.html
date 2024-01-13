@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabela com Botão de Consulta</title>
+  <link rel="stylesheet" href="./public/index.css">
+</head>
+<body>
+
+<table>
+    <h1>STAR WARS SEARCH</h1>
+  <thead>
+    <tr>
+      <th>Diretor</th>
+      <th>Filme</th>
+      <th>Ação</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <%= resposta.director %>
+      </td>
+      <td><%= resposta.title%></td>
+      <td>
+        <button>Consultar Filme</button>
+      </td>
+    </tr>
+    <!-- Adicione mais linhas conforme necessário -->
+  </tbody>
+</table>
+
+</body>
+</html>

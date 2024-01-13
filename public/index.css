@@ -1,0 +1,54 @@
+@font-face {
+    font-family: StarWarsFont;
+    src:url("./fonts/Starjedi.ttf");
+  }
+
+body {
+    background-image: url("./images/background.jpeg");
+    background-size: cover;
+  font-family: StarWarsFont;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  flex-direction: column;
+}
+
+table {
+    background-color: azure;
+  width: 50%;
+}
+
+body h1{
+  font-size: 50px;
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+td:hover{
+    font-size: large;
+}

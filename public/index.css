@@ -1,54 +1,68 @@
-@font-face {
+  @font-face {
+      font-family: StarWarsFont;
+      src:url("./fonts/Starjedi.ttf");
+    }
+
+  body {
+    background-image: url("./images/wallpaper.jpg");
+    background-size:auto;
     font-family: StarWarsFont;
-    src:url("./fonts/Starjedi.ttf");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
   }
 
-body {
-    background-image: url("./images/background.jpeg");
-    background-size: cover;
-  font-family: StarWarsFont;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  flex-direction: column;
-}
+  .main_site{
+    margin: 0px;
+    height: 720px;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+  }
 
-table {
-    background-color: azure;
-  width: 50%;
-}
+  .table_form{
+    width: 50%;
+  }
 
-body h1{
-  font-size: 50px;
-}
+  table {
+        background-color: #7a8d8f;
+        margin-left: 50px;
+        padding: 8px;
+        width: 100%;
+      border-radius: 25px;
+      text-align: center;
+      padding: 15px;
+    }
 
-th, td {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
+  body h1{
+    margin-left: 55px;  
+    color: aliceblue;
+    font-size: 50px;
+  }
 
-th {
-  background-color: #4CAF50;
-  color: white;
-}
+  th {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 10px;
+    height: 45px;
+    margin: 25px;
+  }
 
-button {
-  padding: 10px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-}
+  td{
+    margin: 25px;
+    color: aliceblue;
+    border: 0,5px solid black;
+  }
 
-button:hover {
-  background-color: #45a049;
-}
-
-td:hover{
-    font-size: large;
-}
+  button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }

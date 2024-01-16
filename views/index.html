@@ -8,28 +8,35 @@
 </head>
 <body>
 
-<table>
-    <h1>STAR WARS SEARCH</h1>
-  <thead>
-    <tr>
-      <th>Diretor</th>
-      <th>Filme</th>
-      <th>Ação</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <%= resposta.director %>
-      </td>
-      <td><%= resposta.title%></td>
-      <td>
-        <button>Consultar Filme</button>
-      </td>
-    </tr>
-    <!-- Adicione mais linhas conforme necessário -->
-  </tbody>
-</table>
+<main class="main_site">
+  <section class="table_form">
+    <table>
+      <h1>STAR WARS SEARCH</h1>
+     <thead>
+       <tr>
+         <th>Diretor</th>
+         <th>Filme</th>
+         <th>Ação</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+        <% for(var i=0; i < resposta.lenght; i++){%>
+          <td><%= resposta[i].title%></td>
+          <td>
+            <button>Consultar Filme</button>
+          </td>
+         <% } %>
+         
+       </tr>
+       <!-- Adicione mais linhas conforme necessário -->
+     </tbody>
+   </table>
+   
+  </section>
+  <section>
 
+  </section>
+</main>
 </body>
 </html>

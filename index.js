@@ -11,7 +11,8 @@ app.set('views', path.join(__dirname, '/views'));
 
 app.get('/', (req, res) => {
 
-  axios.get('https://swapi.dev/api/films/1')
+  
+  axios.get('https://swapi.dev/api/films/')
   .then(function (response) {
     var data = response.data;
     console.log(data)
